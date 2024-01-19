@@ -32,7 +32,7 @@ afterEvaluate {
             mavenJava(MavenPublication) {
                 groupId = 'com.github.Tejovarmabuddyloan'
                 artifactId 'fresh'
-                version '0.0.3'
+                version '0.0.1'
 
 
             }
