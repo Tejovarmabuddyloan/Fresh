@@ -1,12 +1,16 @@
 plugins {
 
-    id 'java-library'
+    id 'com.android.library'
 
     id 'maven-publish'
 
 }
 
+android {
+    namespace 'com.example.fresh'
+    compileSdk 34
 
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
@@ -26,7 +30,6 @@ afterEvaluate {
                 groupId = 'com.github.Tejovarmabuddyloan'
                 artifactId 'fresh'
                 version '0.0.6'
-                from  components.java
 
 
             }
