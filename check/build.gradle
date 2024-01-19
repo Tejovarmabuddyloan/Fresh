@@ -1,16 +1,11 @@
 plugins {
 
-    id 'com.android.library'
+    id 'java-library'
 
     id 'maven-publish'
 
 }
-android {
-    namespace 'com.example.fresh'
-    compileSdk 34
 
-
-}
 
 
 java {
@@ -18,9 +13,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_7
 }
 dependencies {
-    implementation 'androidx.core:core:1.7.0'
-    implementation 'com.google.android.gms:play-services-ads-identifier:17.1.0'
-    implementation 'com.android.volley:volley:1.2.1'
+
     implementation 'com.google.code.gson:gson:2.8.8'
 
 
@@ -32,7 +25,7 @@ afterEvaluate {
             mavenJava(MavenPublication) {
                 groupId = 'com.github.Tejovarmabuddyloan'
                 artifactId 'fresh'
-                version '0.0.3'
+                version '0.0.4'
 
 
             }
