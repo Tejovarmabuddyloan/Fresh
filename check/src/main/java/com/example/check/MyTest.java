@@ -4,6 +4,6 @@ public class MyTest {
 
     public String getPlatform()
     {
-        return "Android";
+        return "Hiiiiiii";
     }
 }
