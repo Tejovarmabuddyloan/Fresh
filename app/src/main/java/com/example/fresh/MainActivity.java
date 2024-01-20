@@ -7,7 +7,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.check.MyTest;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         layout.setOrientation(LinearLayout.VERTICAL);
 
         // Create a TextView
-        final TextView textView = new TextView(this);
+        TextView textView = new TextView(this);
         textView.setText("Hello World!");
 
         // Create a Button
@@ -33,17 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the LinearLayout as the content view
         setContentView(layout);
 
-        final MyTest myTest = new MyTest();
-
-        // Set an OnClickListener for the button
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Call the getPlatform function when the button is clicked
-                String platform = myTest.getPlatform();
-                // Update the TextView with the platform information
-                textView.setText(platform);
-            }
-        });
+        MyTest myPlugin = new MyTest(this);
+        myPlugin.whistleLoopEvents("eventName", "extraParameters");
     }
 }
