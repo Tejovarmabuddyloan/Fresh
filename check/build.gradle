@@ -42,10 +42,12 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.findByName('release')
+                from components.release
                 groupId = 'com.github.Tejovarmabuddyloan'
                 artifactId 'fresh'
                 version '0.0.8'
+
+
             }
         }
     }
