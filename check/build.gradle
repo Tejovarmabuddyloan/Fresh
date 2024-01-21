@@ -45,7 +45,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Tejovarmabuddyloan'
                 artifactId 'fresh'
-                version '0.0.8'
+                version '0.0.9'
 
 
             }
